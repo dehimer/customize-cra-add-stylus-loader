@@ -1,4 +1,4 @@
-export default const addStylusLoader = (loaderOptions = {}) => config => {
+const addStylusLoader = (loaderOptions = {}) => config => {
   const mode = process.env.NODE_ENV === "development" ? "dev" : "prod";
 
   // Need these for production mode, which are copied from react-scripts
@@ -78,3 +78,5 @@ export default const addStylusLoader = (loaderOptions = {}) => config => {
 
   return config;
 };
+
+module.exports = addStylusLoader;
