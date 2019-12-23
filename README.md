@@ -3,9 +3,11 @@ This repo contain only code from declined pr (https://github.com/arackaf/customi
 
 
 To install:
+
 npm install --save-dev customize-cra-add-stylus-loader
 
 To use:
+
 const addStylusLoader = require('customize-cra-add-stylus-loader');
 
 module.exports = override(
