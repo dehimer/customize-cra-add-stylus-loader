@@ -70,13 +70,17 @@ const addStylusLoader = (loaderOptions = {}) => config => {
       test: stylModuleRegex,
       use: getStylusLoader({
         importLoaders: 2,
-        modules: true,
-        localIdentName: localIdentName
+        modules: {
+          localIdentName: localIdentName
+        },
       })
     }
   );
 
   return config;
 };
+
+
+
 
 module.exports = addStylusLoader;
